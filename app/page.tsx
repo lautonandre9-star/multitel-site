@@ -29,7 +29,7 @@ const InstitutionalVideo = () => (
             {/* Vídeo institucional - video.mp4 */}
             <video 
               className="w-full h-full object-cover"
-              poster="/assets/ceo.webp"
+              poster="/assets/video.mp4"
               controls
             >
               <source src="/assets/video.mp4" type="video/mp4" />

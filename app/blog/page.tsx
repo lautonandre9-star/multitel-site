@@ -68,10 +68,14 @@ const BlogPage: React.FC = () => {
 
   return (
     <div className="bg-white pb-24">
-      <section className="py-24 bg-slate-50 border-b border-gray-100">
-        <div className="container mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">Insights & <span className="text-blue-600">Estratégia</span></h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto italic">O seu recurso para tendências tecnológicas e decisões de infraestrutura no mercado de Angola.</p>
+      <section className="py-24 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 border-b border-slate-800 relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-4 md:px-8 text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">Insights & <span className="text-blue-400">Estratégia</span></h1>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto italic">O seu recurso para tendências tecnológicas e decisões de infraestrutura no mercado de Angola.</p>
         </div>
       </section>
 

@@ -4,10 +4,10 @@ const SobrePage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* Institutional Hero */}
-      <section className="pt-48 pb-32 bg-slate-950 text-white relative">
+      <section className="pt-48 pb-32 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-12 relative z-10">
           <div className="max-w-4xl">
-            <div className="text-blue-500 font-black text-xs uppercase tracking-[0.4em] mb-6">Quem Somos</div>
+            <div className="text-blue-400 font-black text-xs uppercase tracking-[0.4em] mb-6">Quem Somos</div>
             <h1 className="text-6xl md:text-[100px] font-black mb-8 leading-[0.85] tracking-tighter uppercase">
               Solidez <br/><span className="text-blue-600">e Confiança</span>
             </h1>
@@ -68,7 +68,7 @@ const SobrePage: React.FC = () => {
 
       {/* Leadership Section - CEO e CTO */}
       <section className="py-32 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-12">
+        <div className="container mx-auto px-4 md:px-12 relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.4em] mb-6">Nosso Board</h2>
             <h3 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter uppercase leading-tight">
@@ -163,7 +163,10 @@ const SobrePage: React.FC = () => {
       </section>
 
       {/* Porquê Confiar na Multitel */}
-      <section className="py-32 bg-slate-900 text-white">
+      <section className="py-32 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
         <div className="container mx-auto px-4 md:px-12">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">

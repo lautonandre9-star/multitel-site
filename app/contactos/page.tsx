@@ -4,10 +4,14 @@ import Button from '../../components/ui/Button';
 const ContactosPage: React.FC = () => {
   return (
     <div className="bg-white">
-      <section className="pt-40 pb-24 bg-slate-950 text-white">
-        <div className="container mx-auto px-4 md:px-12">
+      <section className="pt-40 pb-24 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white relative overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-4 md:px-12 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-8xl font-black mb-8 leading-none tracking-tighter">Canais de <br/><span className="text-blue-600">Proximidade</span></h1>
+            <h1 className="text-5xl md:text-8xl font-black mb-8 leading-none tracking-tighter">Canais de <br/><span className="text-blue-400">Proximidade</span></h1>
             <p className="text-xl text-slate-400 font-medium leading-relaxed">Estamos disponíveis para consultas comerciais, suporte técnico e parcerias institucionais em todo o país.</p>
           </div>
         </div>
@@ -39,8 +43,8 @@ const ContactosPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-10 bg-slate-900 text-white rounded-sm">
-                <h4 className="font-black uppercase text-xs tracking-widest mb-4 text-blue-500">Sede Luanda</h4>
+              <div className="p-10 bg-slate-800 text-white rounded-sm border border-slate-700">
+                <h4 className="font-black uppercase text-xs tracking-widest mb-4 text-blue-400">Sede Luanda</h4>
                 <p className="text-sm leading-relaxed text-slate-300">
                   Rua Cristiano dos Santos, nº 5<br/>
                   Bairro Miramar, Distrito Urbano do Sambizanga<br/>

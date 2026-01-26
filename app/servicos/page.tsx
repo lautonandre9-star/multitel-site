@@ -35,11 +35,11 @@ const ServiceDetail = ({ title, intro, details, imageUrl, id }: any) => (
 const ServicosPage: React.FC = () => {
   return (
     <div className="bg-white">
-      <section className="pt-40 pb-20 bg-slate-50">
+      <section className="pt-40 pb-20 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
         <div className="container mx-auto px-4 md:px-12">
           <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-8xl font-black text-slate-900 leading-none mb-8 tracking-tighter">Portfólio <br/><span className="text-blue-600">Corporativo</span></h1>
-            <p className="text-xl text-slate-500 leading-relaxed max-w-2xl">Soluções integradas de telecomunicações desenhadas para suportar a infraestrutura crítica do seu negócio.</p>
+            <h1 className="text-5xl md:text-8xl font-black text-white leading-none mb-8 tracking-tighter">Portfólio <br/><span className="text-blue-400">Corporativo</span></h1>
+            <p className="text-xl text-slate-300 leading-relaxed max-w-2xl">Soluções integradas de telecomunicações desenhadas para suportar a infraestrutura crítica do seu negócio.</p>
           </div>
         </div>
       </section>
@@ -164,19 +164,258 @@ const ServicosPage: React.FC = () => {
         imageUrl="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200"
       />
 
-      {/* MULTITEL AGRO */}
-      <ServiceDetail 
-        id="multitel-agro"
-        title="Soluções Multitel Agro"
-        intro="Tecnologia aplicada ao agronegócio. Telemetria IoT, segurança eletrônica, conectividade rural e energias alternativas."
-        details={[
-          "Telemetria & IoT com sensores de solo e clima",
-          "Videomonitoramento e controle de acesso",
-          "Conectividade via Fibra, Rádio e Satélite",
-          "Energia solar e eólica para autossuficiência"
-        ]}
-        imageUrl="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&q=80&w=1200"
-      />
+      {/* MULTITEL AGRO - SEÇÃO ESPECIAL */}
+      <section className="py-32 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-0 left-0 w-full h-full" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, #3b82f6 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-4 md:px-12 relative z-10">
+          {/* Header */}
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-3 mb-6 bg-blue-600/10 py-3 px-6 rounded-full backdrop-blur-sm border border-blue-500/30">
+              <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span className="text-blue-400 text-xs font-black uppercase tracking-[0.3em]">Inovação no Agronegócio</span>
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black text-white mb-6">
+              Soluções <span className="text-blue-400">Multitel Agro</span>
+            </h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+              Tecnologia de ponta aplicada ao agronegócio angolano. Conectividade, automação, segurança e sustentabilidade para o seu campo.
+            </p>
+          </div>
+
+          {/* Grid de Soluções Agro */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+            
+            {/* Fontes de Energias Alternativas */}
+            <div className="bg-slate-800 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all border-2 border-slate-700 hover:border-blue-500 group">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white mb-3">Fontes de Energias Alternativas</h3>
+                  <p className="text-slate-300 leading-relaxed mb-6">
+                    Fornecemos soluções em energia solar e eólica para tornar a produção agrícola mais autossuficiente e econômica, com sistemas fotovoltaicos, armazenamento eficiente e monitoramento remoto.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Sistemas fotovoltaicos de alta eficiência</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Armazenamento de energia inteligente</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Monitoramento remoto de produção</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Energia eólica para áreas estratégicas</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Telemetria & IoT */}
+            <div className="bg-slate-800 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all border-2 border-slate-700 hover:border-blue-500 group">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white mb-3">Telemetria & IoT</h3>
+                  <p className="text-slate-300 leading-relaxed mb-6">
+                    Monitore sua produção agrícola em tempo real com sensores IoT e conectividade avançada. Colete e analise dados sobre solo, irrigação e clima para aumentar a eficiência e reduzir desperdícios.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Sensores de solo, irrigação e clima</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Tecnologia LoRaWAN para transmissão</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Dashboards personalizados em tempo real</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Análise de dados para decisões estratégicas</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Electrónica e Automação */}
+            <div className="bg-slate-800 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all border-2 border-slate-700 hover:border-blue-500 group">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white mb-3">Electrónica e Automação</h3>
+                  <p className="text-slate-300 leading-relaxed mb-6">
+                    Proteja seu campo com soluções avançadas de segurança e automação. Oferecemos videomonitoramento, controle de acesso remoto e sensores inteligentes para garantir máxima proteção e eficiência.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Câmeras IP e CCTV de alta resolução</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Sensores de movimento e alarmes</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Monitoramento via aplicativo móvel</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Detectores de fumaça e controle de acesso</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Portal Multitel Agro */}
+            <div className="bg-slate-800 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all border-2 border-slate-700 hover:border-blue-500 group">
+              <div className="flex items-start gap-6 mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white mb-3">Portal Multitel Agro</h3>
+                  <p className="text-slate-300 leading-relaxed mb-6">
+                    É uma plataforma digital integrada para gestão agrícola, conectando fornecedores de produtos e serviços, revendedores e instituições do sector. Permite o monitoramento de produção, logística e estoque.
+                  </p>
+                  <ul className="space-y-3">
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Plataforma integrada para gestão agrícola</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Conexão entre fornecedores e revendedores</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Monitoramento de produção e logística</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2"></span>
+                      <span className="text-slate-300">Gestão eficiente e estratégica de estoque</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Conectividade - Destaque Especial */}
+          <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-12 md:p-16 text-white shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-15.857 21.213 0"/>
+                  </svg>
+                </div>
+                <h3 className="text-3xl font-black">Conectividade para o Campo</h3>
+              </div>
+              
+              <p className="text-xl text-blue-50 leading-relaxed mb-8 max-w-3xl">
+                Conectividade de alta performance para sua fazenda. Oferecemos soluções de internet, VPN e redes cabeadas para garantir comunicação estável e segura, mesmo em áreas remotas.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="font-black text-lg mb-3 text-blue-100">Internet Rural</h4>
+                  <ul className="space-y-2 text-blue-50">
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Fibra Óptica de alta velocidade</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Conectividade via rádio (WiMax)</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>VSAT para áreas sem cobertura</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-black text-lg mb-3 text-blue-100">VPN Segura</h4>
+                  <ul className="space-y-2 text-blue-50">
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Acesso remoto a sistemas internos</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Criptografia de nível empresarial</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Gestão centralizada de acesso</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-black text-lg mb-3 text-blue-100">Rede Cabeada</h4>
+                  <ul className="space-y-2 text-blue-50">
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Infraestrutura de rede estável</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Alto desempenho e confiabilidade</span>
+                    </li>
+                    <li className="flex items-start text-sm">
+                      <span className="mr-2">✓</span>
+                      <span>Suporte técnico dedicado 24/7</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -15,11 +15,11 @@ const Footer: React.FC = () => {
             <Link to="/" className="inline-block group">
                <div className="flex items-center mb-6">
                 <div className="w-16 h-16 mr-4 bg-white/5 p-2 rounded-sm border border-white/10 group-hover:border-blue-600 transition-colors">
-                   <img 
-                    src="https://multitel.co.ao/wp-content/uploads/2021/10/Logo-Multitel-site.png" 
-                    alt="Multitel Logo" 
-                    className="w-full h-full object-contain brightness-0 invert" 
-                   />
+                  <img 
+                  src="/assets/logo.png" 
+                  alt="Multitel Logo" 
+                  className="w-9 h-9"
+                  />
                 </div>
                 <div className="flex flex-col">
                   <span className="text-3xl font-black tracking-tighter text-white uppercase leading-none">
