@@ -6,7 +6,11 @@
 
 This contains everything you need to run your app locally.
 
+<<<<<<< HEAD
 View your app in AI Studio: https://ai.studio/apps/temp/2
+=======
+View your app in AI Studio: https://ai.studio/apps/drive/1wi7oe9sOjavV8qNbqkRx5-wbN-MV6wbu
+>>>>>>> e70511ce026c296f2929414b13467f158fb67dad
 
 ## Run Locally
 
@@ -18,3 +22,4 @@ View your app in AI Studio: https://ai.studio/apps/temp/2
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+# multitel-site

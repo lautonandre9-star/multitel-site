@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "multitel-institutional-website",
+=======
+  "name": "copy-of-multitel-institutional-website",
+>>>>>>> e70511ce026c296f2929414b13467f158fb67dad
   "private": true,
   "version": "0.0.0",
   "type": "module",
