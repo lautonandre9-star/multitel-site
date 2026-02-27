@@ -20,8 +20,8 @@ const Navbar: React.FC = () => {
               <img
                 src="/assets/logo.jpeg" 
                 alt="Multitel Logo" 
-                width={128}
-                height={128}
+                width={129}
+                height={129}
                 className="w-full h-full object-contain bg-transparent"
                    />
                     </div>          
