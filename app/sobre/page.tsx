@@ -79,10 +79,15 @@ const SobrePage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* CEO */}
             <div className="bg-white p-12 border border-slate-100 shadow-xl hover:shadow-2xl transition-all group">
-              <div className="flex items-start gap-6 mb-8">
-                <div className="w-24 h-24 bg-blue-600 rounded-sm flex items-center justify-center text-white font-black text-3xl">
-                  KB
-                </div>
+              <div className="flex flex-col items-center text-center gap-6 mb-8">
+                <img
+                  src="/assets/CEO.jpg"
+                  alt="Kussi Bernardo - CEO"
+                  width={480}
+                  height={480}
+                  className="object-contain bg-transparent rounded-sm"
+                  style={{ width: '480px', height: '480px' }}
+                />
                 <div>
                   <h4 className="text-2xl font-black text-slate-900 mb-2">Kussi Bernardo</h4>
                   <p className="text-sm font-black text-blue-600 uppercase tracking-widest">Chief Executive Officer</p>
@@ -107,10 +112,15 @@ const SobrePage: React.FC = () => {
 
             {/* CTO */}
             <div className="bg-white p-12 border border-slate-100 shadow-xl hover:shadow-2xl transition-all group">
-              <div className="flex items-start gap-6 mb-8">
-                <div className="w-24 h-24 bg-blue-600 rounded-sm flex items-center justify-center text-white font-black text-3xl">
-                  LA
-                </div>
+              <div className="flex flex-col items-center text-center gap-6 mb-8">
+                <img
+                  src="/assets/CTO.jpg"
+                  alt="Leonel Augusto - CTO"
+                  width={480}
+                  height={480}
+                  className="object-contain bg-transparent rounded-sm"
+                  style={{ width: '480px', height: '480px' }}
+                />
                 <div>
                   <h4 className="text-2xl font-black text-slate-900 mb-2">Leonel Augusto</h4>
                   <p className="text-sm font-black text-blue-600 uppercase tracking-widest">Chief Technology Officer</p>

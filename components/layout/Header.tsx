@@ -15,16 +15,14 @@ const Navbar: React.FC = () => {
           {/* Logo - MAIOR E MAIS VIBRANTE */}
           <Link to="/" className="flex items-center space-x-4 group">
             <div className="relative">
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-blue-500/30 blur-xl rounded-full group-hover:bg-blue-400/40 transition-all"></div>
               {/* Logo Container */}
-              <div className="relative w-14 h-14 flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-blue-600/50 p-2">
+              <div className="relative w-32 h-32 flex items-center justify-center group-hover:scale-110 transition-transform">
               <img
-                src="/assets/logo.ico" 
+                src="/assets/logo.jpeg" 
                 alt="Multitel Logo" 
-                width={56}
-                height={56}
-                className="w-full h-full object-contain"
+                width={128}
+                height={128}
+                className="w-full h-full object-contain bg-transparent"
                    />
                     </div>          
                       </div>
