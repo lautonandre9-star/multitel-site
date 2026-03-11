@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                <div className="flex items-center mb-6">
                 <div className="w-16 h-16 mr-4 bg-white/5 p-2 rounded-sm border border-white/10 group-hover:border-blue-600 transition-colors">
                   <img 
-                  src="/assets/logo.png" 
+                  src="/assets/logo.jpeg" 
                   alt="Multitel Logo" 
                   className="w-9 h-9"
                   />

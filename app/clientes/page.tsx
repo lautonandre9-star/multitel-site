@@ -81,11 +81,11 @@ const ClientesPage: React.FC = () => {
             {/* Stats Row */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto mt-16">
               <div className="text-center">
-                <div className="text-4xl font-black text-white mb-2">500+</div>
+                <div className="text-4xl font-black text-white mb-2">200+</div>
                 <div className="text-sm text-blue-300 uppercase tracking-widest">Clientes Ativos</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-black text-white mb-2">99.99%</div>
+                <div className="text-4xl font-black text-white mb-2">99.88%</div>
                 <div className="text-sm text-blue-300 uppercase tracking-widest">Uptime Garantido</div>
               </div>
               <div className="text-center">

@@ -10,18 +10,18 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed w-full z-50 bg-gradient-to-b from-slate-950 via-blue-950/98 to-transparent backdrop-blur-md border-b border-blue-900/20">
       <div className="container mx-auto px-4 md:px-12">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-22 py-1">
           
           {/* Logo - MAIOR E MAIS VIBRANTE */}
           <Link to="/" className="flex items-center space-x-4 group">
             <div className="relative">
               {/* Logo Container */}
-              <div className="relative w-32 h-32 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div className="relative w-38 h-28 flex items-center justify-center group-hover:scale-110 transition-transform">
               <img
                 src="/assets/logo.jpeg" 
                 alt="Multitel Logo" 
-                width={129}
-                height={129}
+                width={112}
+                height={112}
                 className="w-full h-full object-contain bg-transparent"
                    />
                     </div>          
@@ -30,6 +30,8 @@ const Navbar: React.FC = () => {
               <div className="text-white font-black text-2xl tracking-tight group-hover:text-blue-400 transition-colors">MULTITEL</div>
               <div className="text-blue-400 text-[9px] font-bold uppercase tracking-[0.3em] group-hover:text-blue-300 transition-colors">Data & Telecom</div>
             </div>
+           
+
           </Link>
 
           {/* Navigation Links - MAIORES E COM ANIMAÇÕES */}
