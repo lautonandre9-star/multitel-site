@@ -1,6 +1,7 @@
 import React from 'react';
+import { useTranslation } from '../../src/i18n/i18n';
 
-const BlogPost = ({ title, category, date, excerpt, imageUrl }: any) => (
+const BlogPost = ({ title, category, date, excerpt, imageUrl, t }: any) => (
   <article className="group cursor-pointer">
     <div className="overflow-hidden rounded-lg mb-6 h-64 bg-gray-100">
       <img src={imageUrl} alt={title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
@@ -14,13 +15,15 @@ const BlogPost = ({ title, category, date, excerpt, imageUrl }: any) => (
       <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">{title}</h3>
       <p className="text-slate-600 leading-relaxed">{excerpt}</p>
       <div className="inline-flex items-center text-sm font-bold text-slate-900 border-b-2 border-transparent group-hover:border-blue-600 transition-all pt-2">
-        Ler Artigo Completo
+        {t.readFullArticle}
       </div>
     </div>
   </article>
 );
 
 const BlogPage: React.FC = () => {
+  const { t } = useTranslation();
+
   const posts = [
     {
       title: "O Impacto do 5G nas Operações Industriais em Angola",
@@ -74,15 +77,17 @@ const BlogPage: React.FC = () => {
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 md:px-8 text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">Insights & <span className="text-blue-400">Estratégia</span></h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto italic">O seu recurso para tendências tecnológicas e decisões de infraestrutura no mercado de Angola.</p>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+            {t.blogTitle.split(' & ')[0]} & <span className="text-blue-400">{t.blogTitle.split(' & ')[1]}</span>
+          </h1>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto italic">{t.blogDesc}</p>
         </div>
       </section>
 
       <section className="py-24">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-            {posts.map((p, i) => <BlogPost key={i} {...p} />)}
+            {posts.map((p, i) => <BlogPost key={i} {...p} t={t} />)}
           </div>
         </div>
       </section>

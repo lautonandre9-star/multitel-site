@@ -1,8 +1,8 @@
-'use client';
-
 import React, { useState, useEffect } from 'react';
+import { useSegment } from '../../../src/context/SegmentContext';
+import { useTranslation } from '../../../src/i18n/i18n';
 
-const slides = [
+const businessSlides = [
   {
     src: '/assets/banner-servicos.png',
     alt: 'Multitel Serviços – Soluções de Conectividade Corporativa',
@@ -13,20 +13,55 @@ const slides = [
   },
 ];
 
+const residentialSlides = [
+  {
+    src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1920',
+    alt: 'Multitel Home – A melhor internet para sua família',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1920',
+    alt: 'Multitel – Conectando sua casa ao mundo',
+  },
+];
+
 const Hero: React.FC = () => {
+  const { segment } = useSegment();
+  const { t } = useTranslation();
+
+  const businessSlides = [
+    {
+      src: '/assets/banner-servicos.png',
+      alt: t.heroBusiness1,
+    },
+    {
+      src: '/assets/banner-caminho.png',
+      alt: t.heroBusiness2,
+    },
+  ];
+
+  const residentialSlides = [
+    {
+      src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1920',
+      alt: t.heroResidential1,
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1920',
+      alt: t.heroResidential2,
+    },
+  ];
+
+  const slides = segment === 'business' ? businessSlides : residentialSlides;
   const [current, setCurrent] = useState(0);
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Start fade-out
       setFade(false);
       setTimeout(() => {
         setCurrent((prev) => (prev + 1) % slides.length);
-        // Start fade-in
         setFade(true);
-      }, 500); // 500ms crossfade transition
-    }, 3000); // Change every 3 seconds
+      }, 500);
+    }, 5000); // 5 segundos
 
     return () => clearInterval(interval);
   }, []);
@@ -41,7 +76,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-slate-950" style={{ paddingTop: '112px' }}>
+    <section className="relative w-full overflow-hidden pt-16 md:pt-20">
       {/* Slide images */}
       {slides.map((slide, i) => (
         <img
@@ -75,7 +110,7 @@ const Hero: React.FC = () => {
         ))}
       </div>
 
-      {/* Left / Right arrow navigation */}
+      {/* Left arrow */}
       <button
         onClick={() => goTo((current - 1 + slides.length) % slides.length)}
         aria-label="Slide anterior"
@@ -85,6 +120,8 @@ const Hero: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
       </button>
+
+      {/* Right arrow */}
       <button
         onClick={() => goTo((current + 1) % slides.length)}
         aria-label="Próximo slide"
