@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSegment } from '../../src/context/SegmentContext';
 import { useTranslation } from '../../src/i18n/i18n';
 
@@ -139,9 +140,14 @@ const ServicosPage: React.FC = () => {
               <h2 className="text-3xl md:text-7xl font-black text-white mb-6">
                 {t.agro.split(' ')[0]} <span className="text-blue-400">{t.agro.split(' ')[1]}</span>
               </h2>
-              <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
                 {t.agroDesc}
               </p>
+              <Link to="/agro">
+                <button className="bg-blue-600 text-white px-8 py-4 rounded-xl font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/20">
+                  {t.agroHeroTitle} - Ver Detalhes do Evento
+                </button>
+              </Link>
             </div>
 
             {/* Grid de Soluções Agro */}

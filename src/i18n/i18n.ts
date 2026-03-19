@@ -9,19 +9,19 @@ export const translations = {
     budget: 'Orçamento',
     angola: 'Angola',
     onlineNow: 'Online Agora',
-    
+
     // Navigation
     whoWeAre: 'Quem Somos',
     solutions: 'Soluções',
     clients: 'Clientes',
     insights: 'Insights',
-    
+
     // Submenu - Who We Are
     theCompany: 'A Empresa',
     managementMessage: 'Mensagem da Gerência',
     missionValues: 'Missão e Valores',
     recruitment: 'Recrutamento',
-    
+
     // Submenu - Solutions
     businessServices: 'Serviços Empresariais',
     residentialServices: 'Serviços Residenciais',
@@ -79,7 +79,7 @@ export const translations = {
     resHeadline1: 'A melhor ',
     resHeadline2: 'Conectividade',
     resHeadline3: ' para transformar a sua residência.',
-    
+
     // Service Titles & Descs
     fiberTitle: 'Fibra Óptica',
     fiberDesc: 'Solução indispensável para empresas que procuram uma conexão rápida, segura e uma base sólida necessária para prosperar no mundo dos negócios de hoje.',
@@ -165,7 +165,7 @@ export const translations = {
     dedicatedManagerDesc: 'Temos um gestor exclusivo para seu projecto, sendo seu ponto principal de contacto. Ele oferece acompanhamento próximo e assegura que suas expectativas sejam atendidas.',
     support247: 'Atendimento 24/7',
     support247Desc: 'Garantimos atendimento 24/7. Nossa equipe está sempre disponível, assegurando a continuidade das operações da sua empresa.',
-    
+
     // Services Page
     specializedService: 'Serviço Especializado',
     corporateSolutions: 'Soluções Corporativas',
@@ -271,6 +271,59 @@ export const translations = {
     customerFocus: 'Foco no Cliente',
     knowMoreOrganization: 'Saiba mais sobre a nossa organização',
 
+    // Agro Event Page
+    agroHeroTitle: 'Digital Agro 2026',
+    agroHeroSubtitle: 'Conectar, Inovação e Transformação Digital no Campo',
+    agroEventDate: '12 a 13 de Outubro de 2026',
+    agroEventLocation: 'HCTA, Hotel de Convenções Talatona',
+    agroEventSchedule: 'Das 09h - 17h',
+    agroEventOrg: 'Organização: Multitel',
+    agroEventNetworking: 'Exposição comercial e Networking',
+    agroStructureTitle: 'Estrutura do Evento',
+    agroStructureExhibition: 'Espaço de Exposição',
+    agroStructureExhibitionDesc: 'Stands de empresas e instituições.',
+    agroStructureConference: 'Auditório de Conferências',
+    agroStructureConferenceDesc: 'Painéis temáticos e apresentações de projectos.',
+    agroStructureShowroom: 'Showroom Digital Agro',
+    agroStructureShowroomDesc: 'Demonstração do projecto da Multitel.',
+    agroStructureNetworking: 'Área de Networking',
+    agroStructureNetworkingDesc: 'Reuniões B2B e parcerias.',
+    agroCostsTitle: 'Custos de Participação',
+    agroPkgVerde: 'Pacote Verde (3x3m)',
+    agroPkgSustentavelSmall: 'Pacote Sustentável (6x3m)',
+    agroPkgSustentavelLarge: 'Pacote Sustentável (6x6m)',
+    agroPkgPremium: 'Pacote Agro premium',
+    agroPkgTerra: 'Pacote Terra Grande',
+    agroPkgEcoSustentavel: 'Pacote Eco Sustentável',
+    agroPkgEcoMaster: 'Pacote Eco Master',
+    agroCostsInclude: '(Os custos incluem: espaço, comunicação institucional do evento e acesso à área de networking).',
+    agroBenefitsTitle: 'Benefícios para as Empresas',
+    agroBenefit1: 'Visibilidade num dos maiores eventos de inovação agrodigital do país',
+    agroBenefit2: 'Oportunidade de fechar negócios e parcerias.',
+    agroBenefit3: 'Exposição da marca em materiais de comunicação e parceiros de mídia.',
+    agroBenefit4: 'Participação ativa em painéis de debate sobre o futuro do agro.',
+    agroPartnersTitle: 'Parceiros do Evento',
+    agroContactTitle: 'Inscrição e Informações',
+    agroFormName: 'Nome Completo',
+    agroFormCompany: 'Empresa',
+    agroFormEmail: 'Email Profissional',
+    agroFormPhone: 'Telefone',
+    agroFormInterest: 'Interesse',
+    agroFormInterestStand: 'Reserva de Stand',
+    agroFormInterestSponsor: 'Patrocínio / Parceria',
+    agroFormInterestVisit: 'Visita ao Evento',
+    agroFormMessage: 'Mensagem (Opcional)',
+    agroFormSubmit: 'Enviar Solicitação',
+    agroFaqTitle: 'Perguntas Frequentes (FAQ)',
+    agroFaqQ1: 'Quem pode participar no evento?',
+    agroFaqA1: 'O Digital Agro é aberto a todas as empresas, produtores, startups e profissionais dos sectores do agronegócio, tecnologia e sustentabilidade.',
+    agroFaqQ2: 'Como posso reservar um espaço de exposição?',
+    agroFaqA2: 'A reserva pode ser feita através do formulário abaixo ou contactando directamente a nossa linha comercial.',
+    agroFaqQ3: 'Haverá transmissão online das conferências?',
+    agroFaqA3: 'Sim, as sessões principais serão transmitidas via streaming para inscritos remotos.',
+
+
+
 
   },
   EN: {
@@ -281,19 +334,19 @@ export const translations = {
     budget: 'Quote',
     angola: 'Angola',
     onlineNow: 'Online Now',
-    
+
     // Navigation
     whoWeAre: 'About Us',
     solutions: 'Solutions',
     clients: 'Clients',
     insights: 'Insights',
-    
+
     // Submenu - Who We Are
     theCompany: 'The Company',
     managementMessage: 'Management Message',
     missionValues: 'Mission and Values',
     recruitment: 'Recruitment',
-    
+
     // Submenu - Solutions
     businessServices: 'Business Services',
     residentialServices: 'Residential Services',
@@ -437,7 +490,7 @@ export const translations = {
     dedicatedManagerDesc: 'We have an exclusive manager for your project, being your main point of contact. He offers close monitoring and ensures that your expectations are met.',
     support247: '24/7 Support',
     support247Desc: 'We guarantee 24/7 support. Our team is always available, ensuring the continuity of your company\'s operations.',
-    
+
     // Services Page
     specializedService: 'Specialized Service',
     corporateSolutions: 'Corporate Solutions',
@@ -543,6 +596,59 @@ export const translations = {
     customerFocus: 'Customer Focus',
     knowMoreOrganization: 'Learn more about our organization',
 
+    // Agro Event Page
+    agroHeroTitle: 'Digital Agro 2026',
+    agroHeroSubtitle: 'Connecting, Innovation and Digital Transformation in the Field',
+    agroEventDate: 'October 12th to 13th, 2026',
+    agroEventLocation: 'HCTA, Talatona Convention Hotel',
+    agroEventSchedule: 'From 09h - 17h',
+    agroEventOrg: 'Organization: Multitel',
+    agroEventNetworking: 'Commercial exhibition and Networking',
+    agroStructureTitle: 'Event Structure',
+    agroStructureExhibition: 'Exhibition Space',
+    agroStructureExhibitionDesc: 'Company and institution stands.',
+    agroStructureConference: 'Conference Auditorium',
+    agroStructureConferenceDesc: 'Thematic panels and project presentations.',
+    agroStructureShowroom: 'Digital Agro Showroom',
+    agroStructureShowroomDesc: 'Multitel project demonstration.',
+    agroStructureNetworking: 'Networking Area',
+    agroStructureNetworkingDesc: 'B2B meetings and partnerships.',
+    agroCostsTitle: 'Participation Costs',
+    agroPkgVerde: 'Green Package (3x3m)',
+    agroPkgSustentavelSmall: 'Sustainable Package (6x3m)',
+    agroPkgSustentavelLarge: 'Sustainable Package (6x6m)',
+    agroPkgPremium: 'Premium Agro Package',
+    agroPkgTerra: 'Terra Grande Package',
+    agroPkgEcoSustentavel: 'Eco Sustainable Package',
+    agroPkgEcoMaster: 'Eco Master Package',
+    agroCostsInclude: '(Costs include: space, institutional communication of the event and access to the networking area).',
+    agroBenefitsTitle: 'Benefits for Companies',
+    agroBenefit1: 'Visibility in one of the country\'s largest digital agro innovation events',
+    agroBenefit2: 'Opportunity to close deals and partnerships.',
+    agroBenefit3: 'Brand exposure in communication materials and media partners.',
+    agroBenefit4: 'Active participation in debate panels on the future of agro.',
+    agroPartnersTitle: 'Event Partners',
+    agroContactTitle: 'Registration & Information',
+    agroFormName: 'Full Name',
+    agroFormCompany: 'Company',
+    agroFormEmail: 'Corporate Email',
+    agroFormPhone: 'Phone',
+    agroFormInterest: 'Interest',
+    agroFormInterestStand: 'Stand Booking',
+    agroFormInterestSponsor: 'Sponsorship / Partnership',
+    agroFormInterestVisit: 'Visit',
+    agroFormMessage: 'Message (Optional)',
+    agroFormSubmit: 'Send Request',
+    agroFaqTitle: 'Frequently Asked Questions (FAQ)',
+    agroFaqQ1: 'Who can participate in the event?',
+    agroFaqA1: 'Digital Agro is open to all companies, producers, startups, and professionals from the agribusiness, technology, and sustainability sectors.',
+    agroFaqQ2: 'How can I book an exhibition space?',
+    agroFaqA2: 'Booking can be done through the form below or by contacting our sales line directly.',
+    agroFaqQ3: 'Will there be online streaming of the conferences?',
+    agroFaqA3: 'Yes, the main sessions will be streamed for remote participants.',
+
+
+
 
   },
   FR: {
@@ -553,19 +659,19 @@ export const translations = {
     budget: 'Devis',
     angola: 'Angola',
     onlineNow: 'En ligne',
-    
+
     // Navigation
     whoWeAre: 'À Propos',
     solutions: 'Solutions',
     clients: 'Clients',
     insights: 'Insights',
-    
+
     // Submenu - Who We Are
     theCompany: "L'Entreprise",
     managementMessage: 'Message de la Direction',
     missionValues: 'Mission et Valeurs',
     recruitment: 'Recrutement',
-    
+
     // Submenu - Solutions
     businessServices: 'Services Entreprise',
     residentialServices: 'Services Résidentiels',
@@ -709,7 +815,7 @@ export const translations = {
     dedicatedManagerDesc: 'Nous avons un gestionnaire exclusif pour votre projet, qui est votre principal point de contact. Il assure un suivi étroit et veille à ce que vos attentes soient satisfaites.',
     support247: 'Assistance 24/7',
     support247Desc: 'Nous garantissons une assistance 24/7. Notre équipe est toujours disponible, assurant la continuité des opérations de votre entreprise.',
-    
+
     // Services Page
     specializedService: 'Service Spécialisé',
     corporateSolutions: 'Solutions d\'Entreprise',
@@ -814,6 +920,59 @@ export const translations = {
     yearsInnovation: 'Années d\'Innovation',
     customerFocus: 'Focus Client',
     knowMoreOrganization: 'En savoir plus sur notre organisation',
+
+    // Agro Event Page
+    agroHeroTitle: 'Digital Agro 2026',
+    agroHeroSubtitle: 'Connectique, Innovation et Transformation Numérique sur le Terrain',
+    agroEventDate: '12 au 13 Octobre 2026',
+    agroEventLocation: 'HCTA, Hôtel des Conventions Talatona',
+    agroEventSchedule: 'De 09h à 17h',
+    agroEventOrg: 'Organisation : Multitel',
+    agroEventNetworking: 'Exposition commerciale et Networking',
+    agroStructureTitle: 'Structure de l\'Événement',
+    agroStructureExhibition: 'Espace d\'Exposition',
+    agroStructureExhibitionDesc: 'Stands d\'entreprises et d\'institutions.',
+    agroStructureConference: 'Auditorium de Conférence',
+    agroStructureConferenceDesc: 'Panels thématiques et présentations de projets.',
+    agroStructureShowroom: 'Showroom Digital Agro',
+    agroStructureShowroomDesc: 'Démonstration du projet Multitel.',
+    agroStructureNetworking: 'Zone de Networking',
+    agroStructureNetworkingDesc: 'Réunions B2B et partenariats.',
+    agroCostsTitle: 'Coûts de Participation',
+    agroPkgVerde: 'Forfait Vert (3x3m)',
+    agroPkgSustentavelSmall: 'Forfait Durable (6x3m)',
+    agroPkgSustentavelLarge: 'Forfait Durable (6x6m)',
+    agroPkgPremium: 'Forfait Agro Premium',
+    agroPkgTerra: 'Forfait Terra Grande',
+    agroPkgEcoSustentavel: 'Forfait Éco-Durable',
+    agroPkgEcoMaster: 'Forfait Éco Master',
+    agroCostsInclude: '(Les coûts comprennent : l\'espace, la communication institutionnelle de l\'événement et l\'accès à la zone de mise en réseau).',
+    agroBenefitsTitle: 'Avantages pour les Entreprises',
+    agroBenefit1: 'Visibilité dans l\'un des plus grands événements d\'innovation agro-numérique du pays',
+    agroBenefit2: 'Opportunité de conclure des accords et des partenariats.',
+    agroBenefit3: 'Exposition de la marque dans les supports de communication et les partenaires médias.',
+    agroBenefit4: 'Participation active à des panels de débat sur l\'avenir de l\'agro.',
+    agroPartnersTitle: 'Partenaires de l\'Événement',
+    agroContactTitle: 'Inscription et Informations',
+    agroFormName: 'Nom Complet',
+    agroFormCompany: 'Entreprise',
+    agroFormEmail: 'Email Professionnel',
+    agroFormPhone: 'Téléphone',
+    agroFormInterest: 'Intérêt',
+    agroFormInterestStand: 'Réservation de Stand',
+    agroFormInterestSponsor: 'Sponsoring / Partenariat',
+    agroFormInterestVisit: 'Visite',
+    agroFormMessage: 'Message (Optionnel)',
+    agroFormSubmit: 'Envoyer la Demande',
+    agroFaqTitle: 'Questions Fréquemment Posées (FAQ)',
+    agroFaqQ1: 'Qui peut participer à l\'événement ?',
+    agroFaqA1: 'Digital Agro est ouvert à toutes les entreprises, producteurs, startups et professionnels des secteurs de l\'agro-industrie, de la technologie et de la durabilité.',
+    agroFaqQ2: 'Comment puis-je réserver un espace d\'exposition ?',
+    agroFaqA2: 'La réservation peut être effectuée via le formulaire ci-dessous ou en contactant directement notre ligne commerciale.',
+    agroFaqQ3: 'Y aura-t-il une diffusion en ligne des conférences ?',
+    agroFaqA3: 'Oui, les sessions principales seront diffusées en streaming pour les participants à distance.',
+
+
 
 
   }

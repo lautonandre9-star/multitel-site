@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
                               { name: t.dedicatedFiber, path: '/servicos#fibra-optica' },
                               { name: t.dataCenter, path: '/servicos#data-center' },
                               { name: t.cybersecurity, path: '/servicos#cybersecurity' },
-                              { name: t.agro, path: '/servicos#agro' }
+                              { name: t.agro, path: '/agro' }
                             ] : [
                               { name: t.homeFiber, path: '/servicos#home-fiber' },
                               { name: t.wifiMesh, path: '/servicos#wifi-mesh' },
@@ -267,7 +267,7 @@ const Navbar: React.FC = () => {
                           { name: t.dedicatedFiber, path: '/servicos#fibra-optica' },
                           { name: t.dataCenter, path: '/servicos#data-center' },
                           { name: t.cybersecurity, path: '/servicos#cybersecurity' },
-                          { name: t.agro, path: '/servicos#agro' }
+                          { name: t.agro, path: '/agro' }
                         ] : [
                           { name: t.homeFiber, path: '/servicos#home-fiber' },
                           { name: t.wifiMesh, path: '/servicos#wifi-mesh' },
