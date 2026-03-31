@@ -322,6 +322,30 @@ export const translations = {
     agroFaqQ3: 'Haverá transmissão online das conferências?',
     agroFaqA3: 'Sim, as sessões principais serão transmitidas via streaming para inscritos remotos.',
 
+    // Projetos Page
+    projects: 'Projetos',
+    projectsTag: 'Inovação & Tecnologia',
+    projectsHero1: 'Os Nossos',
+    projectsHero2: 'Projetos',
+    projectsHeroDesc: 'Plataformas e iniciativas que a Multitel desenvolve para transformar sectores estratégicos da economia angolana.',
+    projectsIntroTag: 'Visão Multitel',
+    projectsIntroTitle: 'Além das Telecomunicações',
+    projectsIntroDesc: 'A Multitel não se limita a fornecer conectividade. Desenvolvemos projectos de transformação digital que impactam positivamente comunidades, empresas e sectores inteiros. O Multitel Agro é o primeiro de muitos projectos que refletem a nossa visão de futuro para Angola.',
+    projectsFeatured: 'Projecto em Destaque',
+    projectsOurProjects: 'Os Nossos Projectos',
+    projectsMultitelProject: 'Projecto Multitel',
+    projectAgroLive: 'Activo · 2026',
+    projectAgroTitle: 'Tecnologia para o Agronegócio',
+    projectAgroDesc: 'O Multitel Agro é a maior iniciativa de transformação digital do agronegócio angolano. Uma plataforma integrada que leva conectividade, IoT, automação, energias renováveis e segurança ao campo — unindo produtores, fornecedores e instituições numa só rede digital.',
+    projectAgroFeat1: 'Conectividade Rural',
+    projectAgroFeat2: 'IoT & Telemetria',
+    projectAgroFeat3: 'Energia Verde',
+    projectAgroFeat4: 'Segurança',
+    projectAgroFeat5: 'Portal Digital',
+    projectAgroLearnMore: 'Explorar o Projecto',
+    projectComingSoonDesc: 'Este projecto está em fase de desenvolvimento. Em breve teremos novidades.',
+    comingSoon: 'Em Breve',
+
 
 
 
@@ -647,6 +671,30 @@ export const translations = {
     agroFaqQ3: 'Will there be online streaming of the conferences?',
     agroFaqA3: 'Yes, the main sessions will be streamed for remote participants.',
 
+    // Projetos Page
+    projects: 'Projects',
+    projectsTag: 'Innovation & Technology',
+    projectsHero1: 'Our',
+    projectsHero2: 'Projects',
+    projectsHeroDesc: 'Platforms and initiatives that Multitel develops to transform strategic sectors of the Angolan economy.',
+    projectsIntroTag: 'Multitel Vision',
+    projectsIntroTitle: 'Beyond Telecommunications',
+    projectsIntroDesc: 'Multitel is not limited to providing connectivity. We develop digital transformation projects that positively impact communities, companies, and entire sectors. Multitel Agro is the first of many projects that reflect our vision for Angola\'s future.',
+    projectsFeatured: 'Featured Project',
+    projectsOurProjects: 'Our Projects',
+    projectsMultitelProject: 'Multitel Project',
+    projectAgroLive: 'Active · 2026',
+    projectAgroTitle: 'Technology for Agribusiness',
+    projectAgroDesc: 'Multitel Agro is the largest digital transformation initiative for Angolan agribusiness. An integrated platform that brings connectivity, IoT, automation, renewable energy and security to the field — uniting producers, suppliers and institutions in a single digital network.',
+    projectAgroFeat1: 'Rural Connectivity',
+    projectAgroFeat2: 'IoT & Telemetry',
+    projectAgroFeat3: 'Green Energy',
+    projectAgroFeat4: 'Security',
+    projectAgroFeat5: 'Digital Portal',
+    projectAgroLearnMore: 'Explore the Project',
+    projectComingSoonDesc: 'This project is under development. Updates coming soon.',
+    comingSoon: 'Coming Soon',
+
 
 
 
@@ -971,6 +1019,30 @@ export const translations = {
     agroFaqA2: 'La réservation peut être effectuée via le formulaire ci-dessous ou en contactant directement notre ligne commerciale.',
     agroFaqQ3: 'Y aura-t-il une diffusion en ligne des conférences ?',
     agroFaqA3: 'Oui, les sessions principales seront diffusées en streaming pour les participants à distance.',
+
+    // Projetos Page
+    projects: 'Projets',
+    projectsTag: 'Innovation & Technologie',
+    projectsHero1: 'Nos',
+    projectsHero2: 'Projets',
+    projectsHeroDesc: 'Plateformes et initiatives que Multitel développe pour transformer les secteurs stratégiques de l\'économie angolaise.',
+    projectsIntroTag: 'Vision Multitel',
+    projectsIntroTitle: 'Au-delà des Télécommunications',
+    projectsIntroDesc: 'Multitel ne se limite pas à fournir de la connectivité. Nous développons des projets de transformation numérique qui impactent positivement les communautés, les entreprises et des secteurs entiers. Multitel Agro est le premier de nombreux projets qui reflètent notre vision pour l\'avenir de l\'Angola.',
+    projectsFeatured: 'Projet en Vedette',
+    projectsOurProjects: 'Nos Projets',
+    projectsMultitelProject: 'Projet Multitel',
+    projectAgroLive: 'Actif · 2026',
+    projectAgroTitle: 'Technologie pour l\'Agro-industrie',
+    projectAgroDesc: 'Multitel Agro est la plus grande initiative de transformation numérique de l\'agro-industrie angolaise. Une plateforme intégrée qui apporte connectivité, IoT, automatisation, énergies renouvelables et sécurité au terrain — unissant producteurs, fournisseurs et institutions dans un seul réseau numérique.',
+    projectAgroFeat1: 'Connectivité Rurale',
+    projectAgroFeat2: 'IoT & Télémétrie',
+    projectAgroFeat3: 'Énergie Verte',
+    projectAgroFeat4: 'Sécurité',
+    projectAgroFeat5: 'Portail Numérique',
+    projectAgroLearnMore: 'Explorer le Projet',
+    projectComingSoonDesc: 'Ce projet est en cours de développement. Nouveautés à venir.',
+    comingSoon: 'Bientôt',
 
 
 

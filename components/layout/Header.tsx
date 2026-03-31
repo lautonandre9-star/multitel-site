@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-6">
             <a href="tel:+244222704200" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
               <Phone size={12} className="text-blue-400" />
-              <span className="hidden sm:inline">{t.serviceLine}</span> +244 222 704 200
+              <span className="hidden sm:inline">{t.serviceLine}</span> +244 923 165 200
             </a>
             <a href="mailto:comercial@multitel.co.ao" className="hidden md:flex items-center gap-2 hover:text-blue-400 transition-colors">
               <Mail size={12} className="text-blue-400" />
@@ -95,7 +95,7 @@ const Navbar: React.FC = () => {
 
               {/* Main Nav */}
               <div className="flex items-center space-x-10">
-                {['sobre', 'servicos', 'clientes', 'blog'].map((path) => {
+                {['sobre', 'servicos', 'clientes', 'blog', 'projetos'].map((path) => {
                   const isSobre = path === 'sobre';
                   return (
                     <div key={path} className="relative group/nav">
@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
                         className={`relative text-[13px] font-black uppercase tracking-widest transition-all flex items-center gap-1 ${isActive(`/${path}`) || (isSobre && location.pathname.startsWith('/sobre')) ? 'text-blue-600' : 'text-blue-950/80 hover:text-blue-600'
                           }`}
                       >
-                        {isSobre ? t.whoWeAre : path === 'servicos' ? t.solutions : path === 'clientes' ? t.clients : t.insights}
+                        {isSobre ? t.whoWeAre : path === 'servicos' ? t.solutions : path === 'clientes' ? t.clients : path === 'blog' ? t.insights : t.projects}
                         {(isSobre || path === 'servicos') && (
                           <ChevronDown className="w-4 h-4 ml-1 transform group-hover/nav:rotate-180 transition-transform duration-300" />
                         )}
@@ -227,7 +227,7 @@ const Navbar: React.FC = () => {
             </div>
 
             <div className="space-y-2">
-              {['sobre', 'servicos', 'clientes', 'blog'].map((path) => {
+              {['sobre', 'servicos', 'clientes', 'blog', 'projetos'].map((path) => {
                 const isSobre = path === 'sobre';
                 return (
                   <div key={path} className="space-y-2">
@@ -237,7 +237,7 @@ const Navbar: React.FC = () => {
                       className={`flex items-center justify-between text-base font-black uppercase tracking-wide transition-all px-4 py-4 rounded-xl ${isActive(`/${path}`) || (isSobre && location.pathname.startsWith('/sobre')) || (path === 'servicos' && location.pathname.startsWith('/servicos')) ? 'text-blue-600 bg-blue-50' : 'text-blue-950 hover:text-blue-600 hover:bg-sky-50'
                         }`}
                     >
-                      <span>{isSobre ? t.whoWeAre : path === 'servicos' ? t.solutions : path === 'clientes' ? t.clients : t.insights}</span>
+                      <span>{isSobre ? t.whoWeAre : path === 'servicos' ? t.solutions : path === 'clientes' ? t.clients : path === 'blog' ? t.insights : t.projects}</span>
                       {(isSobre || path === 'servicos') && <ChevronDown className={`w-5 h-5 transition-transform ${(isSobre && location.pathname.startsWith('/sobre')) || (path === 'servicos' && location.pathname.startsWith('/servicos')) ? 'rotate-180' : ''}`} />}
                     </Link>
 

@@ -4,17 +4,17 @@ import { useTranslation } from '../../src/i18n/i18n';
 const Footer: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <footer className="bg-slate-950 text-slate-400 py-24 relative overflow-hidden">
+    <footer className="bg-slate-950 text-slate-400 py-12 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/4 h-full bg-blue-600/5 -skew-x-12 translate-x-1/2"></div>
       
       <div className="container mx-auto px-4 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8">
           
           {/* Brand Col */}
-           <div className="lg:col-span-5 space-y-8">
+           <div className="lg:col-span-5 space-y-4">
             <Link to="/" className="inline-block group w-full sm:w-auto">
                <div className="flex items-center">
-                <div className="w-full sm:w-80 h-24 md:h-32 bg-white/5 p-2 rounded-sm border border-white/10 group-hover:border-blue-600 transition-colors flex items-center justify-center overflow-hidden">
+                <div className="w-full sm:w-64 h-16 md:h-20 bg-white/5 p-2 rounded-sm border border-white/10 group-hover:border-blue-600 transition-colors flex items-center justify-center overflow-hidden">
                   <img 
                   src="/assets/logo.svg" 
                   alt="Multitel Logo" 
@@ -34,11 +34,11 @@ const Footer: React.FC = () => {
 
           {/* Services Col */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-black uppercase text-xs tracking-[0.4em] mb-10 relative">
+            <h4 className="text-white font-black uppercase text-xs tracking-[0.4em] mb-7 relative">
               {t.services}
               <span className="absolute -bottom-4 left-0 w-10 h-1 bg-blue-600"></span>
             </h4>
-            <ul className="space-y-6 text-sm font-bold uppercase tracking-wider">
+            <ul className="space-y-3 text-sm font-bold uppercase tracking-wider">
               <li><Link to="/servicos" className="hover:text-blue-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-slate-700 mr-3"></span> {t.vsat}</Link></li>
               <li><Link to="/servicos" className="hover:text-blue-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-slate-700 mr-3"></span> {t.dedicatedInternet}</Link></li>
               <li><Link to="/servicos" className="hover:text-blue-500 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-slate-700 mr-3"></span> {t.dataCenter}</Link></li>
@@ -48,11 +48,11 @@ const Footer: React.FC = () => {
 
           {/* Contact Col */}
           <div className="lg:col-span-4">
-            <h4 className="text-white font-black uppercase text-xs tracking-[0.4em] mb-10 relative">
+            <h4 className="text-white font-black uppercase text-xs tracking-[0.4em] mb-7 relative">
               {t.hq}
               <span className="absolute -bottom-4 left-0 w-10 h-1 bg-blue-600"></span>
             </h4>
-            <ul className="space-y-6 text-sm">
+            <ul className="space-y-2 text-sm">
               <li className="flex items-start">
                 <span className="text-blue-600 mr-4 mt-1"><svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
                 <span className="font-bold text-white text-lg tracking-tighter">222 704 200</span>
@@ -62,14 +62,14 @@ const Footer: React.FC = () => {
                 <span className="leading-relaxed font-medium">{t.address}</span>
               </li>
             </ul>
-            <div className="flex space-x-6 mt-10">
+            <div className="flex space-x-6 mt-6">
               <a href="#" className="text-white hover:text-blue-500 font-black text-xs transition-all tracking-[0.3em]">LINKEDIN</a>
               <a href="#" className="text-white hover:text-blue-500 font-black text-xs transition-all tracking-[0.3em]">FACEBOOK</a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/5 mt-24 pt-10 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase font-black tracking-[0.3em]">
+        <div className="border-t border-white/5 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase font-black tracking-[0.3em]">
           <p className="opacity-40">Copyrights © {new Date().getFullYear()} Multitel. {t.rights}</p>
           <div className="flex space-x-10 mt-6 md:mt-0">
             <Link to="/" className="hover:text-blue-500 transition-colors">{t.siteMap}</Link>
